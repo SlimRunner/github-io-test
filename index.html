@@ -7,20 +7,30 @@
     <title>GitHub Pages</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="cpicker.js"></script>
   </head>
   <body>
-    <div class="sli-page-shade dcg-no-touchtracking" tabindex="0">
+    <div id="colorButton" title="Color Picker" class="sli-menu-button">
+      <span class="sli-dat-color-prev-back">
+        <span id="colorButtonPreview" class="sli-dat-color-prev"></span>
+      </span>
+    </div>
+
+    <div id="backShade" class="sli-page-shade" tabindex="0">
       <div
-        class="sli-dialog-style sli-dialog-grid dcg-no-touchtracking"
+        id="colorDialog"
+        class="sli-dialog-style sli-dialog-grid"
         tabindex="1"
       >
         <canvas
-          class="sli-picker-canvas sli-item-picker dcg-no-touchtracking"
+          id="colorWheel"
+          class="sli-picker-canvas sli-item-picker"
           tabindex="2"
           width="256px"
           height="256px"
           >This browser doesn't support HTML5</canvas
         ><input
+          id="alphaSlider"
           class="sli-cpk-slider sli-item-slider"
           type="range"
           title="transparency"
@@ -40,31 +50,31 @@
         ><label class="sli-item-alphaInput-label" for="alphaInput-hsl-picker"
           >Alpha:</label
         ><input
-          id="hexInput-hsl-picker"
+          id="hexInput"
           class="sli-text-box-hex-appearance sli-textbox-style-darkShade sli-item-hexInput"
           type="text"
           tabindex="4"
           maxlength="9"
         /><input
-          id="hueInput-hsl-picker"
+          id="hueInput"
           class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-hueInput"
           type="text"
           tabindex="5"
           maxlength="5"
         /><input
-          id="satInput-hsl-picker"
+          id="satInput"
           class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-satInput"
           type="text"
           tabindex="6"
           maxlength="3"
         /><input
-          id="valInput-hsl-picker"
+          id="valInput"
           class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-valInput"
           type="text"
           tabindex="7"
           maxlength="3"
         /><input
-          id="alphaInput-hsl-picker"
+          id="alphaInput"
           class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-alphaInput"
           type="text"
           tabindex="8"
@@ -72,11 +82,13 @@
         />
         <div class="sli-button-picker-divisor sli-item-buttons-div">
           <button
+            id="pickerOK"
             class="button-size sli-button-style-shadowGreen sli-item-dialOk"
             tabindex="9"
           >
             ✔️</button
           ><button
+            id="pickerCancel"
             class="button-size sli-button-style-shadowRed sli-item-dialCancel"
             tabindex="10"
           >
