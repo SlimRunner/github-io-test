@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages</title>
-</head>
-<body>
-  Test
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Pages</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sli-page-shade dcg-no-touchtracking" tabindex="0">
+      <div
+        class="sli-dialog-style sli-dialog-grid dcg-no-touchtracking"
+        tabindex="1"
+      >
+        <canvas
+          class="sli-picker-canvas sli-item-picker dcg-no-touchtracking"
+          tabindex="2"
+          width="256px"
+          height="256px"
+          >This browser doesn't support HTML5</canvas
+        ><input
+          class="sli-cpk-slider sli-item-slider"
+          type="range"
+          title="transparency"
+          min="0"
+          max="1"
+          step="0.001"
+          value="1"
+          tabindex="3"
+        /><label class="sli-item-hexInput-label" for="hexInput-hsl-picker"
+          >Hex:</label
+        ><label class="sli-item-hueInput-label" for="hueInput-hsl-picker"
+          >H:</label
+        ><label class="sli-item-satInput-label" for="satInput-hsl-picker"
+          >S:</label
+        ><label class="sli-item-valInput-label" for="valInput-hsl-picker"
+          >V:</label
+        ><label class="sli-item-alphaInput-label" for="alphaInput-hsl-picker"
+          >Alpha:</label
+        ><input
+          id="hexInput-hsl-picker"
+          class="sli-text-box-hex-appearance sli-textbox-style-darkShade sli-item-hexInput"
+          type="text"
+          tabindex="4"
+          maxlength="9"
+        /><input
+          id="hueInput-hsl-picker"
+          class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-hueInput"
+          type="text"
+          tabindex="5"
+          maxlength="5"
+        /><input
+          id="satInput-hsl-picker"
+          class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-satInput"
+          type="text"
+          tabindex="6"
+          maxlength="3"
+        /><input
+          id="valInput-hsl-picker"
+          class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-valInput"
+          type="text"
+          tabindex="7"
+          maxlength="3"
+        /><input
+          id="alphaInput-hsl-picker"
+          class="sli-text-box-color-appearance sli-textbox-style-darkShade sli-item-alphaInput"
+          type="text"
+          tabindex="8"
+          maxlength="3"
+        />
+        <div class="sli-button-picker-divisor sli-item-buttons-div">
+          <button
+            class="button-size sli-button-style-shadowGreen sli-item-dialOk"
+            tabindex="9"
+          >
+            ✔️</button
+          ><button
+            class="button-size sli-button-style-shadowRed sli-item-dialCancel"
+            tabindex="10"
+          >
+            ❌
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
